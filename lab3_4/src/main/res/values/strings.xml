@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="first_activity">This is first activity!</string>
+    <string name="to_second">To second</string>
+    <string name="to_third">to third</string>
+    <string name="to_first">to first</string>
+    <string name="second_activity">This is second activity!</string>
+    <string name="third_activity">This is third activity!</string>
+    <string name="wear_a_mask">Wear a mask</string>
+    <string name="wash_my_hands">Wash my hands</string>
+    <string name="title_about">About</string>
+    <string name="to_second_safely">To second (safely)</string>
+</resources>
