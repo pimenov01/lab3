@@ -2,7 +2,6 @@ package com.example.lab3
 
 import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.launchActivity
-import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBackUnconditionally
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -10,25 +9,21 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.espresso.assertion.ViewAssertions.matches
 
 @RunWith(AndroidJUnit4::class)
 class BackstackTest {
-/*
+
     @get:Rule
     var rule = ActivityScenarioRule(MainActivity::class.java)
 
-    private fun destroyCheck() = assertTrue(rule.scenario.state == Lifecycle.State.DESTROYED)*/
+    private fun destroyCheck() = assertTrue(rule.scenario.state == Lifecycle.State.DESTROYED)
 
     @Test
     fun exitFromFrag1() { // 1 b> exit
-        //pressBackUnconditionally()
-        //destroyCheck()
-        launchActivity<MainActivity>()
-        onView(withId(R.id.firstActivity)).check(matches(isDisplayed()))
+        pressBackUnconditionally()
+        destroyCheck()
     }
-/*
+
     @Test
     fun exitFromFrag1_Frag2_2() { // 1 -> 2 b> 1 b> exit
         launchActivity<MainActivity>()
@@ -76,5 +71,5 @@ class BackstackTest {
         pressBackUnconditionally()
         checkDisplay(R.id.firstActivity)
         exitFromFrag1()
-    }*/
+    }
 }

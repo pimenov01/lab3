@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/thirdButton"
-        app:layout_constraintTop_toBottomOf="@id/secondActivity"
+        app:layout_constraintTop_toBottomOf="@id/secondTextView"
         android:text="@string/to_first"
         />
     <Button
