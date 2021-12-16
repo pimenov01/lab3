@@ -16,6 +16,7 @@ class SecondActivity : OptionedActivity() {
         setContentView(binding.root)
         binding.firstButton.setOnClickListener { toFirst() }
         binding.thirdButton.setOnClickListener { toThird() }
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -32,9 +33,9 @@ class SecondActivity : OptionedActivity() {
 
     private fun toThird() {
         //with startActivityForResult() method
-        //startActivityForResult(Intent(this, ThirdActivity::class.java), RESULT_CODE)
+        startActivityForResult(Intent(this, ThirdActivity::class.java), RESULT_CODE)
         //without that method
-        startActivity(Intent(this, ThirdActivity::class.java))
+        //startActivity(Intent(this, ThirdActivity::class.java))
 
     }
 
