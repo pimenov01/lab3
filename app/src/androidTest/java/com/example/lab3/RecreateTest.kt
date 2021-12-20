@@ -23,14 +23,14 @@ class RecreateTest {
 
 
     @Test
-    fun fromFragment1() {
+    fun fromFirst() {
         checkDisplay(R.id.firstActivity)
         rotateScreen()
         checkDisplay(R.id.firstActivity)
     }
 
     @Test
-    fun fromFragment2_3() {
+    fun fromSecond3() {
         performClick(R.id.secondButton)
         rotateScreen()
         checkDisplay(R.id.secondActivity)
@@ -39,7 +39,7 @@ class RecreateTest {
     }
 
     @Test
-    fun fromFragment2_1() {
+    fun fromSecond1() {
         performClick(R.id.secondButton)
         rotateScreen()
         checkDisplay(R.id.secondActivity)
@@ -48,7 +48,7 @@ class RecreateTest {
     }
 
     @Test
-    fun fromFragment3_1() {
+    fun fromThird1() {
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
         rotateScreen()
@@ -58,7 +58,7 @@ class RecreateTest {
     }
 
     @Test
-    fun fromFragment3_2() {
+    fun fromThird2() {
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
         rotateScreen()

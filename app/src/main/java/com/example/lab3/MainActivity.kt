@@ -17,10 +17,4 @@ class MainActivity : OptionedActivity() {
         startActivity(Intent(this, SecondActivity::class.java))
     }
 
-
-    private fun toSecondNoTrace() {
-
-    }
-
-
 }

@@ -27,7 +27,7 @@ class AboutTest {
     }
 
     @Test
-    fun frag1_back() {
+    fun firstDoubleBack() {
         launchActivity<MainActivity>()
         openAbout()
         pressBackUnconditionally()
@@ -36,7 +36,7 @@ class AboutTest {
     }
 
     @Test
-    fun frag1_up() {
+    fun firstUp() {
         launchActivity<MainActivity>()
         openAbout()
         aboutUp()
@@ -45,7 +45,7 @@ class AboutTest {
     }
 
     @Test
-    fun frag2_back() {
+    fun secondBack() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         openAbout()
@@ -57,7 +57,7 @@ class AboutTest {
 
 
     @Test
-    fun frag2_up() {
+    fun secondUp() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         openAbout()
@@ -69,7 +69,7 @@ class AboutTest {
 
 
     @Test
-    fun frag3_back_back() {
+    fun thirdDoubleBack() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
@@ -84,7 +84,7 @@ class AboutTest {
 
 
     @Test
-    fun frag3_up_back() {
+    fun thirdUpBack() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
@@ -99,7 +99,7 @@ class AboutTest {
 
 
     @Test
-    fun frag3_back_toFirst() {
+    fun thirdBackToFirst() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
@@ -111,7 +111,7 @@ class AboutTest {
     }
 
     @Test
-    fun frag3_up_toFirst() {
+    fun thirdUpToFirst() {
         launchActivity<MainActivity>()
         performClick(R.id.secondButton)
         performClick(R.id.thirdButton)
